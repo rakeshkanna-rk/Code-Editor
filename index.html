@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Code Editor</title>
+    <link rel="icon" href="favicon.svg" type="image/x-icon" />
+
+    <!-- SEO -->
+    <meta name="description" content="A powerful online code editor with live preview and console output.">
+    <meta name="keywords" content="online code editor, HTML, CSS, JavaScript, live preview">
+    <meta name="author" content="Rakesh Kanna S">
+    <meta name="robots" content="index, follow">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Code Editor">
+    <meta property="og:description" content="A simple online html, css, javascript editor with live preview and console output.">
+    <meta property="og:image" content="https://rakeshkanna-rk.github.io/Code-Editor/Thambnail.png">
+    <meta property="og:url" content="https://rakeshkanna-rk.github.io/Code-Editor/">
+    <meta property="og:type" content="website">
+    
+    <!-- LOCAL FILES -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+
+    <!-- CODEMIRROR -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/codemirror.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/theme/base16-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/mode/javascript/javascript.min.js"></script>
+  
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="header">
+        <div class="title">
+          <h1>Code Editor</h1>
+        </div>
+        <div class="buttons">
+          <button onclick="runCode()">Run</button>
+          <button onclick="downloadCode()">Download</button>
+          <div class="console-toggle">
+            <label class="switch">
+              <input
+                type="checkbox"
+                id="consoleToggle"
+                onclick="toggleConsole()"
+              />
+              <span class="slider"></span>
+            </label>
+            <label for="consoleToggle">Show Console</label>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- EDITOR -->
+    <div class="editor-container">
+      <div class="editor-wrapper">
+        <label for="html"> HTML</label>
+        <textarea id="html" class="editor"></textarea>
+      </div>
+      <div class="editor-wrapper">
+        <label for="css"> CSS</label>
+        <textarea id="css" class="editor"></textarea>
+      </div>
+      <div class="editor-wrapper">
+        <label for="js"> JavaScript</label>
+        <textarea id="js" class="editor"></textarea>
+      </div>
+    </div>
+
+    <!-- CONSOLE -->
+    <div id="console-panel">
+      <div class="consoleheader">
+        <h4>Console Output</h4>
+        <button class="button-dark-h3-sm" onclick="clearConsole()">
+          Clear Console
+        </button>
+      </div>
+      <div id="console-output">Press 'Run' to see any console output</div>
+    </div>
+
+    <!-- PREVIEW -->
+    <iframe id="output"></iframe>
+  </body>
+</html>
