@@ -1,0 +1,24 @@
+# SEO-Friendly robots.txt for Markdown Editor
+
+User-agent: *
+Disallow: /private/
+Disallow: /temp/
+Disallow: /test/
+
+# Allow search engines to crawl important sections
+Allow: /
+
+# Prevent duplicate content from being indexed (optional)
+Disallow: /?*  # Blocks URLs with query parameters (e.g., ?id=123)
+Disallow: /search  # If you have a search page that creates duplicate content
+
+# Allow indexing of CSS, JS, and images
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.svg$
+Allow: /*.gif$
+
+# Sitemap for better indexing
+Sitemap: https://rakeshkanna-rk.github.io/Code-Editor/sitemap.xml

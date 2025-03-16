@@ -3,26 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Code Editor</title>
     <link rel="icon" href="favicon.svg" type="image/x-icon" />
 
     <!-- SEO -->
-    <meta name="description" content="A powerful online code editor with live preview and console output.">
-    <meta name="keywords" content="online code editor, HTML, CSS, JavaScript, live preview">
-    <meta name="author" content="Rakesh Kanna S">
-    <meta name="robots" content="index, follow">
+    <meta
+      name="description"
+      content="A powerful online code editor with live preview and console output."
+    />
+    <meta
+      name="keywords"
+      content="online code editor, HTML, CSS, JavaScript, live preview"
+    />
+    <meta name="author" content="Rakesh Kanna S" />
+    <meta name="robots" content="index, follow" />
 
     <!-- OPEN GRAPH -->
-    <meta property="og:title" content="Code Editor">
-    <meta property="og:description" content="A simple online html, css, javascript editor with live preview and console output.">
-    <meta property="og:image" content="https://rakeshkanna-rk.github.io/Code-Editor/Thambnail.png">
-    <meta property="og:url" content="https://rakeshkanna-rk.github.io/Code-Editor/">
-    <meta property="og:type" content="website">
-    
+    <meta property="og:title" content="Code Editor" />
+    <meta
+      property="og:description"
+      content="A simple online html, css, javascript editor with live preview and console output."
+    />
+    <meta
+      property="og:image"
+      content="https://rakeshkanna-rk.github.io/Code-Editor/Thambnail.png"
+    />
+    <meta
+      property="og:url"
+      content="https://rakeshkanna-rk.github.io/Code-Editor/"
+    />
+    <meta property="og:type" content="website" />
+
     <!-- LOCAL FILES -->
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rakeshkanna-rk/Code-Editor/style.css" />
+    <script src="https://cdn.jsdelivr.net/gh/rakeshkanna-rk/Code-Editor/script.js"></script>
 
     <!-- CODEMIRROR -->
     <link
@@ -37,9 +52,31 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/mode/xml/xml.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/mode/css/css.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/mode/javascript/javascript.min.js"></script>
-  
   </head>
   <body>
+    <!-- Overlay -->
+    <div id="dev-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn" onclick="closeOverlay()">×</span>
+        <p>
+          🚀 Are You A Developer? <br />
+          <strong>Contribute Now!</strong>
+        </p>
+        <a
+          href="https://github.com/rakeshkanna-rk/Code-Editor"
+          target="_blank"
+          style="color: #4caf50; text-decoration: none; font-weight: bold"
+        >
+          ⭐ Contribute on GitHub
+
+          <div class="righter">
+            <div class="credits">
+              <img src="github.svg" alt="github" width="40px" />
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
 
     <!-- NAVBAR -->
     <nav class="navbar">
