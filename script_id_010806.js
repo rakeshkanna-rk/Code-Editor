@@ -121,6 +121,14 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 });
 
+// OVERLAY
 function closeOverlay() {
   document.getElementById("dev-overlay").classList.add("hidden");
 }
+
+ // Mobile Alert 
+window.onload = function() {
+  if (window.innerWidth < 768) {
+      alert("⚠️ 𝗙𝗼𝗿 𝗮 𝗯𝗲𝘁𝘁𝗲𝗿 𝗲𝘅𝗽𝗲𝗿𝗶𝗲𝗻𝗰𝗲, 𝘂𝘀𝗲 𝗮 𝗹𝗮𝗿𝗴𝗲𝗿 𝘀𝗰𝗿𝗲𝗲𝗻.\n\nClick OK to continue.");
+  }
+};

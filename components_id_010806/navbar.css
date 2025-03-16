@@ -31,13 +31,29 @@
 .buttons button {
   font-family: var(--font);
   font-size: var(--H2);
-  color: var(--text-color);
+  color: var(--text-color-dull);
   padding: var(--padding-small) var(--padding-larg);
   background: var(--bg-color);
   border: none;
   outline: none;
   border-radius: 15px;
   cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 7.5px;
+}
+
+.buttons button i, .console-toggle label:last-child i {
+  color: var(--text-color);
+  line-height: 0;
+}
+
+.buttons button:hover {
+  background-color: var(--hover-bg);
+  transition: background-color 0.3s ease;
 }
 
 /* --- CONSOLE TOGGLE --- */
@@ -50,6 +66,14 @@
   padding: var(--padding-small) var(--padding-small);
   background-color: var(--bg-color);
   border-radius: 15px;
+}
+.console-toggle label:last-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 7.5px;
+  color: var(--text-color-dull);
 }
 
 .switch {
@@ -87,6 +111,10 @@
   background-color: white;
   transition: 0.4s;
   border-radius: 50%;
+}
+
+input:hover + .slider {
+  background-color: var(--hover-bg);
 }
 
 input:checked + .slider {

@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Code Editor</title>
-    <link rel="icon" href="favicon.svg" type="image/x-icon" />
+    <link rel="icon" href="img_id_010806/favicon.svg" type="image/x-icon" />
 
     <!-- LOCAL FILES -->
     <link rel="stylesheet" href="components_id_010806/root.css" />
     <link rel="stylesheet" href="style_id_010806.css" />
     <script src="script_id_010806.js"></script>
+
+    <!-- FLATICON PACK -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-chubby/css/uicons-solid-chubby.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
 
     <!-- SEO -->
     <meta
@@ -69,10 +73,9 @@
           style="color: #4caf50; text-decoration: none; font-weight: bold"
         >
           ⭐ Contribute on GitHub
-
           <div class="righter">
             <div class="credits">
-              <img src="github.svg" alt="github" width="40px" />
+              <img src="img_id_010806/github.svg" alt="github" width="40px" />
             </div>
           </div>
         </a>
@@ -83,11 +86,11 @@
     <nav class="navbar">
       <div class="header">
         <div class="title">
-          <h1>Code Editor</h1>
+          <h1>&nbsp; &lt;/&gt; &nbsp; Code Editor</h1>
         </div>
         <div class="buttons">
-          <button onclick="runCode()">Run</button>
-          <button onclick="downloadCode()">Download</button>
+          <button onclick="runCode()"> <i class="fi fi-sc-play"></i> Run</button>
+          <button onclick="downloadCode()"> <i class="fi fi-ss-cloud-download-alt"></i> Download</button>
           <div class="console-toggle">
             <label class="switch">
               <input
@@ -97,7 +100,7 @@
               />
               <span class="slider"></span>
             </label>
-            <label for="consoleToggle">Show Console</label>
+            <label for="consoleToggle"> <i class="fi fi-ss-square-terminal"></i> Show Console</label>
           </div>
         </div>
       </div>
@@ -106,15 +109,15 @@
     <!-- EDITOR -->
     <div class="editor-container">
       <div class="editor-wrapper">
-        <label for="html"> HTML</label>
+        <label for="html"> <img src="img_id_010806/html5-original.svg" alt="html-img" /> HTML</label>
         <textarea id="html" class="editor"></textarea>
       </div>
       <div class="editor-wrapper">
-        <label for="css"> CSS</label>
+        <label for="css"> <img src="img_id_010806/css3-original.svg" alt="css-img" /> CSS</label>
         <textarea id="css" class="editor"></textarea>
       </div>
       <div class="editor-wrapper">
-        <label for="js"> JavaScript</label>
+        <label for="js"> <img src="img_id_010806/javascript-original.svg" alt="js-img" /> JavaScript</label>
         <textarea id="js" class="editor"></textarea>
       </div>
     </div>

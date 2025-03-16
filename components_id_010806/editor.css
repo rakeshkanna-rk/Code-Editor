@@ -15,9 +15,16 @@
 }
 
 .editor-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   margin-bottom: 5px;
   padding-left: 10px;
   font-family: var(--font);
+}
+.editor-wrapper label img {
+  height: 20px;
+  margin-right: 5px;
 }
 
 .editor {
@@ -26,8 +33,10 @@
 }
 .CodeMirror {
   font-size: 15px !important;
+  padding-top: 10px;
   font-family: var(--editor-font);
   max-width: 100% !important;
+  border-radius: 5px;
 }
 
 #output {
