@@ -28,9 +28,9 @@ document.addEventListener("DOMContentLoaded", function () {
 </html>`);
 
   cssEditor.setValue(`body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }`);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}`);
 
   jsEditor.setValue(`console.log('Hello, World!');`);
 
@@ -56,17 +56,17 @@ document.addEventListener("DOMContentLoaded", function () {
   
               // Override console.log
               console.log = function(message) {
-                logContainer.innerHTML += "<span style='color:white'>" + message + "</span><br>";
+                logContainer.innerHTML += "<span style='color:white'>" + "&gt;&nbsp;" + message + "</span><br>";
               };
   
               // Override console.error
               console.error = function(error) {
-                logContainer.innerHTML += "<span style='color:red'>" + error + "</span><br>";
+                logContainer.innerHTML += "<span style='color:red'>" + "&gt;&nbsp;" + error + "</span><br>";
               };
   
               // Capture uncaught errors
               window.onerror = function(message, source, lineno, colno, error) {
-                logContainer.innerHTML += "<span style='color:red'><b>Error:</b> " + message + " (Line: " + lineno + ")</span><br>";
+                logContainer.innerHTML += "<span style='color:red'><b>Error:</b> " +  "&gt;&nbsp;" + message + " (Line: " + lineno + ")</span><br>";
               };
             })();
           <\/script>

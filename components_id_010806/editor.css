@@ -73,3 +73,12 @@
   align-items: center;
   padding: 0 10px;
 }
+
+.consoleheader i {
+  font-size: var(--H2);
+  line-height: 0;
+}
+
+.consoleheader button:hover {
+  background-color: var(--hover-bg);
+}
