@@ -2,10 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
 
 /* LOCAL STORAGE */
-@import url("components/buttons.css");
-@import url("components/overlay.css");
-@import url("components/navbar.css");
-@import url("components/editor.css");
+@import url("https://cdn.jsdelivr.net/gh/rakeshkanna-rk/Code-Editor/components/buttons.css");
+@import url("https://cdn.jsdelivr.net/gh/rakeshkanna-rk/Code-Editor/components/overlay.css");
+@import url("https://cdn.jsdelivr.net/gh/rakeshkanna-rk/Code-Editor/components/navbar.css");
+@import url("https://cdn.jsdelivr.net/gh/rakeshkanna-rk/Code-Editor/components/editor.css");
 
 :root {
   --editor-font: "PT Mono", monospace;
