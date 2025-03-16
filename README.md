@@ -25,13 +25,13 @@ This Code Editor is a web-based tool designed for an intuitive coding experience
 ## Screenshots
 
 **Editor**
-![Screenshot 1](screenshot-editor.png)
+![Screenshot 1](Screenshot-editor.png)
 
 **Console**
-![Screenshot 2](screenshot-console.png)
+![Screenshot 2](Screenshot-console.png)
 
 **Error**
-![Screenshot 3](screenshot-error.png)
+![Screenshot 3](Screenshot-error.png)
 
 ## Contributor Guide
 
