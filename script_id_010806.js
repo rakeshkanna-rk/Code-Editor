@@ -4,28 +4,41 @@ document.addEventListener("DOMContentLoaded", function () {
     lineNumbers: true,
     theme: "base16-dark",
     autoCloseTags: true,
+    autoCloseBrackets: true,
+    foldGutter: true,
+    gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter"],
+    indentWithTabs: true,
+    smartIndent: true,
   });
   var cssEditor = CodeMirror.fromTextArea(document.getElementById("css"), {
     mode: "css",
     lineNumbers: true,
     theme: "base16-dark",
+    foldGutter: true,
+    autoCloseBrackets: true,
+    gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter"],
+    indentWithTabs: true,
+    smartIndent: true,
   });
   var jsEditor = CodeMirror.fromTextArea(document.getElementById("js"), {
     mode: "javascript",
     lineNumbers: true,
     theme: "base16-dark",
+    foldGutter: true,
+    gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter"],
+    autoCloseBrackets: true,
+    indentWithTabs: true,
+    smartIndent: true,
   });
 
   // Prefilled Code
-  htmlEditor.setValue(`<!DOCTYPE html>
-<html>
-    <head>
-        <title>Test</title>
-    </head>
-    <body>
-        <h1>Hello, World!</h1>
-    </body>
-</html>`);
+  htmlEditor.setValue(`<head>
+  <title>Test</title>
+</head>
+<body>
+  <h1>Hello, World!</h1>
+</body>
+`);
 
   cssEditor.setValue(`body {
   font-family: Arial, sans-serif;
@@ -93,12 +106,17 @@ document.addEventListener("DOMContentLoaded", function () {
     var jsCode = jsEditor.getValue();
     var blob = new Blob(
       [
+        "<!DOCTYPE html>\n",
+        "<html>\n",
         htmlCode,
         "\n<style>\n",
         cssCode,
         "\n</style>\n<script>\n",
         jsCode,
         "\n</script>",
+        "\n<!-- Code Editor by Rakesh Kanna S -->",
+        "\n<!-- https://rakeshkanna-rk.github.io/Code-Editor/ -->",
+        "\n</html>",
       ],
       { type: "text/html" }
     );
@@ -126,9 +144,11 @@ function closeOverlay() {
   document.getElementById("dev-overlay").classList.add("hidden");
 }
 
- // Mobile Alert 
-window.onload = function() {
+// Mobile Alert
+window.onload = function () {
   if (window.innerWidth < 768) {
-      alert("⚠️ 𝗙𝗼𝗿 𝗮 𝗯𝗲𝘁𝘁𝗲𝗿 𝗲𝘅𝗽𝗲𝗿𝗶𝗲𝗻𝗰𝗲, 𝘂𝘀𝗲 𝗮 𝗹𝗮𝗿𝗴𝗲𝗿 𝘀𝗰𝗿𝗲𝗲𝗻.\n\nClick OK to continue.");
+    alert(
+      "⚠️ 𝗙𝗼𝗿 𝗮 𝗯𝗲𝘁𝘁𝗲𝗿 𝗲𝘅𝗽𝗲𝗿𝗶𝗲𝗻𝗰𝗲, 𝘂𝘀𝗲 𝗮 𝗹𝗮𝗿𝗴𝗲𝗿 𝘀𝗰𝗿𝗲𝗲𝗻.\n\nClick OK to continue."
+    );
   }
 };
