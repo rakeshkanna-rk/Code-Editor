@@ -1,0 +1,25 @@
+/* ------------------------------------------ */
+/*           GLOBAL ROOT STYLES               */
+/* ------------------------------------------ */
+
+
+/* COMPONENTS */
+@import url("buttons.css");
+@import url("overlay.css");
+@import url("navbar.css");
+@import url("editor.css");
+
+
+:root {
+  --editor-font: "PT Mono", monospace;
+  --font: "Roboto Serif", serif;
+  --bg-color: #2c2c2c;
+  --text-color: #fff;
+  --hover-bg: #555;
+  --H1: 22px;
+  --H2: 18px;
+  --H3: 14px;
+  --padding-larg: 25px;
+  --padding-medium: 20px;
+  --padding-small: 15px;
+}

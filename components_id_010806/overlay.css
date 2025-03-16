@@ -48,6 +48,14 @@
 }
 
 /* Github Icon */
+.righter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7px;
+}
+
 .credits {
   padding: var(--padding-larg);
   width: 100%;
