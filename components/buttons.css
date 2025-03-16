@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
+
+:root {
+  --editor-font: "PT Mono", monospace;
+  --font: "Roboto Serif", serif;
+  --bg-color: #2c2c2c;
+  --text-color: #fff;
+  --hover-bg: #555;
+  --H1: 22px;
+  --H2: 18px;
+  --H3: 14px;
+  --padding-large: 25px;
+  --padding-medium: 20px;
+  --padding-small: 15px;
+}
+
+.button-dark-h2-sl {
+  font-family: var(--font);
+  font-size: var(--H2);
+  color: var(--text-color);
+  padding: var(--padding-small) var(--padding-large);
+  background: var(--bg-color);
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.button-dark-h3-sl {
+  font-family: var(--font);
+  font-size: var(--H3);
+  color: var(--text-color);
+  padding: var(--padding-small) var(--padding-large);
+  background: var(--bg-color);
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.button-dark-h2-sm {
+  font-family: var(--font);
+  font-size: var(--H2);
+  color: var(--text-color);
+  padding: var(--padding-small) var(--padding-medium);
+  background: var(--bg-color);
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.button-dark-h3-sm {
+  font-family: var(--font);
+  font-size: var(--H3);
+  color: var(--text-color);
+  padding: var(--padding-small) var(--padding-medium);
+  background: var(--bg-color);
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.button-dark-h3-ml {
+  font-family: var(--font);
+  font-size: var(--H3);
+  color: var(--text-color);
+  padding: var(--padding-medium) var(--padding-large);
+  background: var(--bg-color);
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.button-dark-h2-ml {
+  font-family: var(--font);
+  font-size: var(--H2);
+  color: var(--text-color);
+  padding: var(--padding-medium) var(--padding-large);
+  background: var(--bg-color);
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
