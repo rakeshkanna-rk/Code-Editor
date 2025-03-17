@@ -27,7 +27,6 @@
       }
 
       p {
-        line-height: 0.5;
         font-size: 18px;
         color: rgb(224, 224, 224);
       }
@@ -60,7 +59,7 @@
       document.getElementById("countdown").textContent = count;
       count--;
       if (count < 0) {
-        window.location.href = "/";
+        window.location.href = "/Code-Editor/";
       } else {
         setTimeout(updateCountdown, 1000);
       }
@@ -68,7 +67,7 @@
     window.onload = updateCountdown;
 
     setTimeout(() => {
-      window.location.href = "/";
+      window.location.href = "/Code-Editor/";
     }, 5000); // Redirects after 5 seconds
   </script>
 </html>
