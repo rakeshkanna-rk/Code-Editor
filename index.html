@@ -8,7 +8,7 @@
     <link rel="icon" href="img_id_010806/favicon.svg" type="image/x-icon" />
 
     <!-- LOCAL FILES -->
-    <link rel="stylesheet" href="components_id_010806/root.css" />
+    <link rel="stylesheet" href="css_components/root.css" />
     <link rel="stylesheet" href="style_id_010806.css" />
     <script src="script_id_010806.js"></script>
 
@@ -63,6 +63,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/addon/fold/foldgutter.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css"
+    />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/codemirror.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/mode/xml/xml.min.js"></script>
@@ -83,8 +87,8 @@
   </head>
   <body>
     <!-- Overlay -->
-    <div id="dev-overlay" class="overlay">
-      <div class="overlay-content">
+    <div id="dev-overlay" class="overlay" onclick="closeOverlay(event)">
+      <div class="overlay-content" onclick="event.stopPropagation()">
         <span class="close-btn" onclick="closeOverlay()">×</span>
         <p>
           🚀 Are You A Developer? <br />
@@ -112,6 +116,9 @@
           <h1>&nbsp; &lt;/&gt; &nbsp; Code Editor</h1>
         </div>
         <div class="buttons">
+          <button onclick="window.location.href='./docs/'">
+            <i class="fi fi-ss-document"></i> Docs
+          </button>
           <button onclick="runCode()"><i class="fi fi-sc-play"></i> Run</button>
           <button onclick="downloadCode()">
             <i class="fi fi-ss-cloud-download-alt"></i> Download

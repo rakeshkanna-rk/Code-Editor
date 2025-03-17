@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Page Not Found</title>
+    <link rel="stylesheet" href="css_components/root.css" />
+    <style>
+
+      body {
+        display: flex;
+        flex-direction: column;
+        font-family: var(--editor-font);
+        background-color: var(--bg-color);
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+      }
+
+      h1 {
+        font-size: 60px;
+        color: #fe0000;
+        line-height: 0;
+        text-shadow: 0 0 50px #af4c4c, 0 0 20px #af4c4c, 0 0 40px #af4c4c;
+        letter-spacing: 0.1em;
+      }
+
+      p {
+        line-height: 0.5;
+        font-size: 18px;
+        color: rgb(224, 224, 224);
+      }
+
+      a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+      }
+
+      .countdown {
+        font-size: 24px;
+        font-weight: bold;
+        color: #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>404</h1>
+    <p>Oops! The page you are looking for does not exist.</p>
+    <p>
+      Redirecting to the home page in
+      <span id="countdown" class="countdown">5</span> seconds...
+    </p>
+    <a href="/">Go Back Home</a>
+  </body>
+  <script>
+    let count = 5;
+    function updateCountdown() {
+      document.getElementById("countdown").textContent = count;
+      count--;
+      if (count < 0) {
+        window.location.href = "/";
+      } else {
+        setTimeout(updateCountdown, 1000);
+      }
+    }
+    window.onload = updateCountdown;
+
+    setTimeout(() => {
+      window.location.href = "/";
+    }, 5000); // Redirects after 5 seconds
+  </script>
+</html>

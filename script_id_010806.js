@@ -140,8 +140,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // OVERLAY
-function closeOverlay() {
-  document.getElementById("dev-overlay").classList.add("hidden");
+function closeOverlay(event) {
+  // Close the overlay only if the user clicks outside overlay-content
+  if (!event || event.target.id === "dev-overlay") {
+    document.getElementById("dev-overlay").classList.add("hidden");
+  }
 }
 
 // Mobile Alert
