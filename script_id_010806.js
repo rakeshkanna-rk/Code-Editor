@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
+  let isEdited = false;
+
   var htmlEditor = CodeMirror.fromTextArea(document.getElementById("html"), {
     mode: "xml",
     lineNumbers: true,
@@ -46,6 +48,22 @@ document.addEventListener("DOMContentLoaded", function () {
 }`);
 
   jsEditor.setValue(`console.log('Hello, World!');`);
+
+  // Detect Changes in Any Editor
+  function trackChanges() {
+    isEdited = true;
+  }
+
+  htmlEditor.on("change", trackChanges);
+  cssEditor.on("change", trackChanges);
+  jsEditor.on("change", trackChanges);
+
+  // Warn Before Leaving the Page
+  window.onbeforeunload = function (event) {
+    if (isEdited) {
+      return "You have unsaved changes. Are you sure you want to leave?";
+    }
+  };
 
   window.runCode = function () {
     var htmlCode = htmlEditor.getValue();
