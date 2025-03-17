@@ -56,6 +56,18 @@
   transition: background-color 0.3s ease;
 }
 
+.buttons button input[type="number"] {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: var(--H2);
+  font-family: var(--font);
+}
+
+
 /* --- CONSOLE TOGGLE --- */
 
 .console-toggle {

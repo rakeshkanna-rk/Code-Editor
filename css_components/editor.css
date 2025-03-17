@@ -33,7 +33,7 @@
   height: 100%;
 }
 .CodeMirror {
-  font-size: 17px !important;
+  font-size: 17px;
   padding-top: 10px;
   font-family: var(--editor-font);
   max-width: 100% !important;

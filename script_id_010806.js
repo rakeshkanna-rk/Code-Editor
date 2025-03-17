@@ -173,3 +173,27 @@ window.onload = function () {
     );
   }
 };
+
+
+// FONT SIZE
+function toggleInput() {
+  var input = document.getElementById("font-size");
+  var closeBtn = document.getElementById("close-btn");
+
+  if (input.style.display === "none") {
+    input.style.display = "inline-block";
+    closeBtn.style.display = "inline-block";
+  }
+}
+
+function closeInput(event) {
+  event.stopPropagation(); // Prevent triggering the button click event
+  document.getElementById("font-size").style.display = "none";
+  document.getElementById("close-btn").style.display = "none";
+}
+
+function changeFontSize(size) {
+  document.querySelectorAll(".CodeMirror").forEach((editor) => {
+    editor.style.fontSize = size + "px";
+  });
+}

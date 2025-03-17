@@ -22,6 +22,11 @@
       href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-chubby/css/uicons-solid-chubby.css"
+    />
+
     <!-- SEO -->
     <meta
       name="description"
@@ -122,6 +127,19 @@
           <button onclick="runCode()"><i class="fi fi-sc-play"></i> Run</button>
           <button onclick="downloadCode()">
             <i class="fi fi-ss-cloud-download-alt"></i> Download
+          </button>
+          <button id="toggle-btn" onclick="toggleInput()">
+            <i class="fi fi-sc-text"></i> font size
+            <input
+              type="number"
+              id="font-size"
+              value="17"
+              min="10"
+              max="40"
+              style="display: none; width: 50px; margin-left: 5px"
+              oninput="changeFontSize(this.value)"
+            />
+            <span id="close-btn" onclick="closeInput(event)" style="display: none; cursor: pointer; margin-left: 5px;">✖</span>
           </button>
           <div class="console-toggle">
             <label class="switch">
