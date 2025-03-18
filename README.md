@@ -9,18 +9,21 @@ This Code Editor is a web-based tool designed for an intuitive coding experience
 ## Features
 
 - **Multi-Language Support**: Edit HTML, CSS, and JavaScript in separate panels.
-- **Real-Time Output**: Instantly preview your code execution within an iframe.
-- **Syntax Highlighting**: Uses CodeMirror for better readability and efficient editing.
-- **Console Logging**: Displays JavaScript `console.log()` outputs and errors in a built-in console.
-- **Download Code**: Save your written code as an HTML file for offline use.
-- **Toggle Console**: Show or hide the JavaScript console as needed.
+- **Syntax Highlighting**: Uses CodeMirror for enhanced readability and an improved coding experience.
+- **Console Panel**: View JavaScript console output, warnings, and errors directly within the editor.
+- **Download Code**: Save your entire project as a single HTML file with embedded CSS and JavaScript.
+- **Collapsible Sections**: Fold/unfold lines for better organization and focus.
+- **Auto-closing Tags & Brackets**: Automatically completes tags, brackets, and quotes for faster coding.
+- **Font Size Adjuster**: Easily change the editor's font size for better readability.
+- **Unsaved Changes Alert**: Prevent accidental navigation loss by warning users about unsaved changes.
 
 ## Usage
 
-1. **Write Code**: Type in the HTML, CSS, and JavaScript panels.
-2. **Run Code**: Click the **Run** button to execute and preview the output.
-3. **View Console Output**: Toggle the **Show Console** button to view logs and errors.
-4. **Download Code**: Click **Download** to save your project as an HTML file.
+1. Write your HTML, CSS, and JavaScript in the respective code editor panels.
+2. Click the `Run` button to execute and preview your code in real-time.
+3. Check the console panel for JavaScript output, warnings, or errors.
+4. Use the `Download` button to save your code as a standalone HTML file.
+5. Adjust the font size using the settings button to optimize your coding experience.
 
 ## Screenshots
 
